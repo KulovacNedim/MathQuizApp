@@ -58,6 +58,12 @@ public class MathQuizApp {
 			mathOp.rootingOperation(sc);
 			break;
 		default:
+			
+			while (choice < 1 || choice > 6) {
+				System.out.print("\nWrong input! Please enter one of existing options (1 - 6): ");
+				
+				choice = sc.nextInt();
+			}
 		}
 
 	}
