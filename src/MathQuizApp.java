@@ -25,8 +25,8 @@ public class MathQuizApp {
 		System.out.println("    2) Substraction");
 		System.out.println("    3) Multiplication");
 		System.out.println("    4) Division");
-		System.out.println("    5) Square rooting");
-		System.out.println("    6) Squaring");
+		System.out.println("    5) Squaring");
+		System.out.println("    6) Square rooting");
 
 		System.out.print("\nEnter your choice: ");
 
@@ -54,21 +54,21 @@ public class MathQuizApp {
 			mathOp.divisionOperation(sc);
 			break;
 		case 5:
-			System.out.println("\nWelcome to Square Rooting Quiz!\n");
+			System.out.println("\nWelcome to Squaring Quiz!\n");
 
 			mathOp.squaringOperation(sc);
 			break;
 		case 6:
-			System.out.println("\nWelcome to Squaring Quiz!\n");
+			System.out.println("\nWelcome to Square Rooting Quiz!\n");
 
 			mathOp.rootingOperation(sc);
 			break;
 		default:
 			
 			while (choice < 1 || choice > 6) {
-				System.out.print("\nWrong input! Please enter one of existing options (1 - 6): ");
+				System.out.print("\nWrong input! Try again.\n");
 				
-				choice = sc.nextInt();
+				showMenu();
 			}
 		}
 		
