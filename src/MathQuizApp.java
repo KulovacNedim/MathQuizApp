@@ -5,15 +5,21 @@ public class MathQuizApp {
 
 	public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
-		MathOperations mathOp = new MathOperations();
-
 		System.out.println("+----------------------------------------+");
 		System.out.println("+                                        +");
 		System.out.println("+     Welcome to Math Quiz Aplication!   +");
 		System.out.println("+                                        +");
 		System.out.println("+----------------------------------------+");
+		
+		showMenu();
 
+	}
+
+	static void showMenu() {
+		
+		Scanner sc = new Scanner(System.in);
+		MathOperations mathOp = new MathOperations();
+		
 		System.out.println("\nChoose qiuz you want to try: \n");
 		System.out.println("    1) Addition");
 		System.out.println("    2) Substraction");
@@ -65,7 +71,7 @@ public class MathQuizApp {
 				choice = sc.nextInt();
 			}
 		}
-
+		
 	}
 
 }
