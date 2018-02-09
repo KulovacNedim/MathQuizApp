@@ -26,7 +26,7 @@ public class MathOperations {
 		System.out.println("Odgovorili ste tacno na " + brojTacnihOdgovora + " pitanja od postavljenih " + brojPitanja);
 
 		MathQuizApp.showMenu();
-	
+
 	}
 
 	public void substractionOperation(Scanner sc) {
@@ -52,14 +52,57 @@ public class MathOperations {
 		System.out.println("Odgovorili ste tacno na " + brojTacnihOdgovora + " pitanja od postavljenih " + brojPitanja);
 
 		MathQuizApp.showMenu();
-	
+
 	}
 
 	public void multiplicationOperation(Scanner sc) {
+		System.out.print("Unesi broj pitanja koliko zelite da vam se postavi: ");
+		int brojPitanja = sc.nextInt();
+		int brojTacnihOdgovora = 0;
+
+		for (int i = 0; i < brojPitanja; i++) {
+
+			int number_1 = (int) (Math.random() * 10) + 1;
+			int number_2 = (int) (Math.random() * 10) + 1;
+
+			System.out.print("Koliko je : " + number_1 + " * " + number_2 + " = ");
+			int result = sc.nextInt();
+
+			if (result == number_1 * number_2) {
+				System.out.println("Odgovor je tacan");
+				brojTacnihOdgovora++;
+			}
+		}
+
+		System.out.println("Odgovorili ste tacno na " + brojTacnihOdgovora + " pitanja od postavljenih " + brojPitanja);
+
+		MathQuizApp.showMenu();
 
 	}
 
 	public void divisionOperation(Scanner sc) {
+
+		System.out.print("Unesi broj pitanja koliko zelite da vam se postavi: ");
+		int brojPitanja = sc.nextInt();
+		int brojTacnihOdgovora = 0;
+
+		for (int i = 0; i < brojPitanja; i++) {
+
+			double number_1 = (int) (Math.random() * 10) + 1;
+			double number_2 = (int) (Math.random() * 10) + 1;
+
+			System.out.print("Koliko je : " + number_1 + " / " + number_2 + " = ");
+			double result = sc.nextInt();
+
+			if (result == number_1 / number_2) {
+				System.out.println("Odgovor je tacan");
+				brojTacnihOdgovora++;
+			}
+		}
+
+		System.out.println("Odgovorili ste tacno na " + brojTacnihOdgovora + " pitanja od postavljenih " + brojPitanja);
+
+		MathQuizApp.showMenu();
 
 	}
 
