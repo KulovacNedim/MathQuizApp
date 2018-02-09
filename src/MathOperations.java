@@ -5,7 +5,7 @@ public class MathOperations {
 
 	public void additionOperation(Scanner sc) {
 
-		System.out.print("Unesi broj pitanja koliko zelite da vam se postavi: ");
+		System.out.print("How many questions you want to be asked? ");
 		int brojPitanja = sc.nextInt();
 		int brojTacnihOdgovora = 0;
 
@@ -14,16 +14,20 @@ public class MathOperations {
 			int number_1 = (int) (Math.random() * 10) + 1;
 			int number_2 = (int) (Math.random() * 10) + 1;
 
-			System.out.print("Koliko je : " + number_1 + " + " + number_2 + " = ");
+			System.out.print("\nWhat is " + number_1 + " + " + number_2 + "? ");
 			int result = sc.nextInt();
 
 			if (result == number_1 + number_2) {
-				System.out.println("Odgovor je tacan");
+				System.out.println("Correct answer!\n");
 				brojTacnihOdgovora++;
+			} else {
+				System.out.println("Wrong answer! Correct answer is " + (number_1 + number_2));
 			}
 		}
+		
+		System.out.println("You answered correctly " + brojTacnihOdgovora + " of " + brojPitanja + " asked questions.");
 
-		System.out.println("Odgovorili ste tacno na " + brojTacnihOdgovora + " pitanja od postavljenih " + brojPitanja);
+		System.out.println("\nPlay another game!\n");
 
 		MathQuizApp.showMenu();
 
@@ -31,7 +35,7 @@ public class MathOperations {
 
 	public void substractionOperation(Scanner sc) {
 
-		System.out.print("Unesi broj pitanja koliko zelite da vam se postavi: ");
+		System.out.print("How many questions you want to be asked? ");
 		int brojPitanja = sc.nextInt();
 		int brojTacnihOdgovora = 0;
 
@@ -40,23 +44,27 @@ public class MathOperations {
 			int number_1 = (int) (Math.random() * 10) + 1;
 			int number_2 = (int) (Math.random() * 10) + 1;
 
-			System.out.print("Koliko je : " + number_1 + " - " + number_2 + " = ");
+			System.out.print("\nWhat is " + number_1 + " - " + number_2 + "? ");
 			int result = sc.nextInt();
 
 			if (result == number_1 - number_2) {
-				System.out.println("Odgovor je tacan");
+				System.out.println("Correct answer!\n");
 				brojTacnihOdgovora++;
+			} else {
+				System.out.println("Wrong answer! Correct answer is " + (number_1 - number_2));
 			}
 		}
 
-		System.out.println("Odgovorili ste tacno na " + brojTacnihOdgovora + " pitanja od postavljenih " + brojPitanja);
+		System.out.println("You answered correctly " + brojTacnihOdgovora + " of " + brojPitanja + " asked questions.");
+
+		System.out.println("\nPlay another game!\n");
 
 		MathQuizApp.showMenu();
 
 	}
 
 	public void multiplicationOperation(Scanner sc) {
-		System.out.print("Unesi broj pitanja koliko zelite da vam se postavi: ");
+		System.out.print("How many questions you want to be asked? ");
 		int brojPitanja = sc.nextInt();
 		int brojTacnihOdgovora = 0;
 
@@ -65,16 +73,20 @@ public class MathOperations {
 			int number_1 = (int) (Math.random() * 10) + 1;
 			int number_2 = (int) (Math.random() * 10) + 1;
 
-			System.out.print("Koliko je : " + number_1 + " * " + number_2 + " = ");
+			System.out.print("\nWhat is " + number_1 + " * " + number_2 + "? ");
 			int result = sc.nextInt();
 
 			if (result == number_1 * number_2) {
-				System.out.println("Odgovor je tacan");
+				System.out.println("Correct answer!\n");
 				brojTacnihOdgovora++;
+			} else {
+				System.out.println("Wrong answer! Correct answer is " + (number_1 * number_2));
 			}
 		}
 
-		System.out.println("Odgovorili ste tacno na " + brojTacnihOdgovora + " pitanja od postavljenih " + brojPitanja);
+		System.out.println("You answered correctly " + brojTacnihOdgovora + " of " + brojPitanja + " asked questions.");
+
+		System.out.println("\nPlay another game!\n");
 
 		MathQuizApp.showMenu();
 
@@ -82,7 +94,7 @@ public class MathOperations {
 
 	public void divisionOperation(Scanner sc) {
 
-		System.out.print("Unesi broj pitanja koliko zelite da vam se postavi: ");
+		System.out.print("How many questions you want to be asked? ");
 		int brojPitanja = sc.nextInt();
 		int brojTacnihOdgovora = 0;
 
@@ -91,16 +103,20 @@ public class MathOperations {
 			double number_1 = (int) (Math.random() * 10) + 1;
 			double number_2 = (int) (Math.random() * 10) + 1;
 
-			System.out.print("Koliko je : " + number_1 + " / " + number_2 + " = ");
+			System.out.print("\nWhat is " + number_1 + " / " + number_2 + "? ");
 			double result = sc.nextInt();
 
 			if (result == number_1 / number_2) {
-				System.out.println("Odgovor je tacan");
+				System.out.println("Correct answer!\n");
 				brojTacnihOdgovora++;
+			} else {
+				System.out.println("Wrong answer! Correct answer is " + (number_1 / number_2));
 			}
 		}
 
-		System.out.println("Odgovorili ste tacno na " + brojTacnihOdgovora + " pitanja od postavljenih " + brojPitanja);
+		System.out.println("You answered correctly " + brojTacnihOdgovora + " of " + brojPitanja + " asked questions.");
+
+		System.out.println("\nPlay another game!\n");
 
 		MathQuizApp.showMenu();
 
